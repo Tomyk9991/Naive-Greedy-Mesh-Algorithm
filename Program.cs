@@ -7,7 +7,9 @@ namespace NaiveGreedyMeshAlgorithm
     {
         public static void Main(string[] args)
         {
-            Console.SetBufferSize(Console.BufferWidth, 200);
+            if(Environment.OSVersion.Platform == PlatformID.Win32NT)
+                Console.SetBufferSize(Console.BufferWidth, 200);
+            
             const int width = 16;
             const int height = 16;
             ushort[] chunk = new ushort[width * height];
