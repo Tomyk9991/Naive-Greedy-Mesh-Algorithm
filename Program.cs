@@ -73,6 +73,8 @@ namespace NaiveGreedyMeshAlgorithm
                 Console.ForegroundColor = PickColor(data.Block);
                 Console.Write(data.Block);
                 Console.ResetColor();
+
+                
                 Console.Write($" Width: {data.Width} \t Height: {data.Height}");
             }
 
