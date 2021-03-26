@@ -5,8 +5,9 @@ namespace NaiveGreedyMeshAlgorithm
 {
     class Program
     {
-        public static void Main(string[] args) 
+        public static void Main(string[] args)
         {
+            Console.SetBufferSize(Console.BufferWidth, 200);
             const int width = 16;
             const int height = 16;
             ushort[] chunk = new ushort[width * height];
